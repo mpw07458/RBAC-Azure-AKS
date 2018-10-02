@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: devcoe-group-admin-bind
+  namespace: devcoe
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: devcoe-admin
+subjects:
+- kind: Group
+  name: "d859220f-5a8a-4c59-b205-9a1830559b05
