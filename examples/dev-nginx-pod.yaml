@@ -1,15 +1,15 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: devcoe-nginx-pod
+  name: dev-nginx-pod
 spec:
   containers:
     - name: frontend-nginx
       image: nginx:latest
       volumeMounts:
       - mountPath: "/mnt/azure"
-        name: devcoe-nginx-volume
+        name: dev-nginx-volume
   volumes:
-    - name: devcoe-nginx-volume
+    - name: dev-nginx-volume
       persistentVolumeClaim:
         claimName: azure-managed-disk
