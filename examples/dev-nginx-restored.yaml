@@ -1,10 +1,10 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: devcoe-nginx-restored
+  name: dev-nginx-restored
 spec:
   containers:
-    - name: devcoe-nginx-restored
+    - name: dev-nginx-restored
       image: nginx
       volumeMounts:
       - mountPath: "/mnt/azure"
